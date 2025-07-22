@@ -3,54 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>My Portfolio</title>
 </head>
 <body>
-    <section id="navbar">
-        <!-- First comment, this is where the navigation bar will be -->
-        <nav>
-            <ul>
-                <li><a href="#intro">Intro</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <nav>
+      <ul class="menus">
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#resume">My Skills</a></li>
+        <li><a href="#work">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+  </nav>
+  <main>
+    <section id="showcase">
+      <div class="container">
+        <div class="left-showcase">
+          <div class="inner-left-showcase">
+            <h1>Zine Eddine OUARGLI</h1>
+            <hr class="hr">
+            <p>Junior Software Developer</p>
+            <div class="contact">
+              <a href="https://www.instagram.com/zinou_unborned/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram-square"></i></a>
+              <a href="https://www.linkedin.com/in/zine-eddine-ouargli/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/Zine-Eddine-OUARGLI" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="right-showcase">
+          <img src="imgs/mypic.jpg" alt="Zine Eddine OUARGLI">
+        </div>
+      </div>
     </section>
-    <section id="intro">
-        <!-- Second comment, this is where the introduction of the person will be -->
-        <img src="portfolio-img.png" alt="portfolio image" width="100" height="100">
-        <h1>OUARGLI Zine Eddine</h1>
-        <p>I am an aspiring fullstack web developer that's aiming to boost his career through learning new technologies.</p>
-    </section>
-    <section id="hobbies">
-        <!-- Third comment, this is where the person's hobbies will be displayed-->
-        <h1>My Hobbies</h1>
+    <section class="about-me" id="about-me">
+      <div class="container">
+        <h2>About Me</h2>
+        <hr class="hr">
+        <p>Hi, I'm Zine Eddine OUARGLI, a 25 years old Software Engineer specializing in JavaScript stack, with a degree in visual computing, and currently learning the MERN stack.</p>
         <p>I am very into the following hobbies:</p>
+            <ul class="fixed-list">
+                <li>Video Games</li>
+                <li>Anime and TV shows</li>
+                <li>Music</li>
+                <li>Movies</li>
+                <li>Reading</li>
+                <li>Sports</li>
+            </ul>
+            <div class="vid-right">
+            <p>Here is a link to one of my favorite songs that's also in an anime!</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mLRjFWDGs1g?si=j4ivAEu-IqL5Jl4B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+      </div>
+    </section>
+    <section class="my-skills" id="resume">
+      <div class="container">
+        <div class="current-skills">
+          <h2>My Skills</h2>
+          <hr class="hr">
+          <div class="imgs">
+            <div class="img">
+              <img src="imgs/html.png" alt="HTML">
+              <p>HTML</p>
+            </div>
+            <div class="img">
+              <img src="imgs/css-3.png" alt="CSS">
+              <p>CSS</p>
+            </div>
+            <div class="img">
+              <img src="imgs/javascript.png" alt="JAVASCRIPT">
+              <p>JAVASCRIPT</p>
+            </div>
+            <div class="img">
+              <img src="imgs/python.png" alt="PYTHON">
+              <p>PYTHON</p>
+            </div>
+            <div class="img">
+              <img src="imgs/git.png" alt="GIT">
+              <p>GIT</p>
+            </div>
+            <div class="img">
+              <img src="imgs/c.png" alt="C">
+              <p>C</p>
+            </div>
+          </div>
+        </div>
+        <div class="future-skills">
+          <h2>Skills I'm Learning</h2>
+          <hr class="hr">
+          <div class="imgs">
+            <div class="img">
+              <img src="imgs/react.png" alt="REACT">
+              <p>REACT</p>
+            </div>
+            <div class="img">
+              <img src="imgs/nodejs.png" alt="NODEJS">
+              <p>NODE</p>
+            </div>
+            <div class="img">
+              <img src="imgs/tailwind.png" alt="TAILWIND CSS">
+              <p>TAILWIND</p>
+            </div>
+            <div class="img">
+              <img src="imgs/mongodb.png" alt="MONGODB">
+              <p>MONGODB</p>
+            </div>
+          </div>
+        </div>
+        <div class="soft-skills">
+          <h2>Soft Skills</h2>
+          <hr class="hr">
+          <strong>Besides technical skills the soft skills I have gained so far are listed below:</strong>
+          <ul>
+            <li><i class="fas fa-chalkboard-teacher"></i> &nbsp;Problem-solving skills and critical thinking</li>
+            <li><i class="far fa-handshake"></i> &nbsp;Communication</li>
+            <li><i class="fas fa-book-reader"></i> &nbsp;Self-learning</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio" id="work">
+      <div class="container">
+        <h2>Projects</h2>
+        <hr class="hr">
+        <strong>Projects that I made throughout my learning journey</strong>
         <ul>
-            <li>Video Games</li>
-            <li>Anime and TV shows</li>
-            <li>Music</li>
-            <li>Movies</li>
-            <li>Reading</li>
-            <li>Sports</li>
+           <li>Calculator through HTML/CSS/Javascript: <a href="https://zine-eddine-ouargli.github.io/Calculator/" target="_blank" rel="noopener noreferrer">link</a></li>
+           <li>Joke Generator through HTML/CSS/Javascript and API handling: <a href="https://zine-eddine-ouargli.github.io/joke-generator/" target="_blank" rel="noopener noreferrer">link</a></li>
+           <li>Tic-Tac-Toe through HTML/CSS/Javascript: <a href="https://zine-eddine-ouargli.github.io/x-o-game/" target="_blank" rel="noopener noreferrer">link</a></li>
         </ul>
-        <p>Here is a link to one of my favorite songs that's also in an anime!</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/mLRjFWDGs1g?si=j4ivAEu-IqL5Jl4B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
     </section>
-    <section id="contact">
-        <!-- Fourth and final comment, this is where you can contact the person-->
-        <footer>
-        <h1>My Contact Info</h1>
-        <p>Email me at: <a href="mailto:zinou.ouargli@gmail.com">zinou.ouargli@gmail.com</a></p>
-        <p>Find me on LinkedIn <a href="https://www.linkedin.com/in/zine-eddine-ouargli/" target="_blank"><b>Here</b></a></p>
-        <h2>Contact me!</h2>
-        <form>
-            <input type="text" name="fullname" placeholder="Enter your fullname here..."> <br> <br>
-            <textarea name="comment" placeholder="Enter your comment here" rows="5" cols="40"></textarea> <br> <br>
+  </main>
+  <footer id="contact">
+      <div class="contact-container">
+        <div class="left-side">
+          <h3>Find me Here !</h3>
+          <div class="contact">
+            <a href="https://www.instagram.com/zinou_unborned/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://www.linkedin.com/in/zine-eddine-ouargli/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Zine-Eddine-OUARGLI" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a>
+          </div>
+        </div>
+        <div class="right-side">
+          <h3>Send me a Message !</h3>
+          <form>
+            <label for="fullname" id="fullname-label">Fullname :</label>
+            <input id="fullname" type="text" name="fullname" placeholder="Enter your fullname here..." > <br> <br>
+            <label for="comment">Message :</label>
+            <textarea id="comment" name="comment" placeholder="Enter your comment here"></textarea> <br> <br>
             <button>Submit</button>
-        </form>
-        </footer>
-    </section>
-
+          </form>
+        </div>
+      </div>
+      <p>© 2025 - Zine Eddine OUARGLI - All rights reserved</p>
+  </footer>
+    
 </body>
 </html>
